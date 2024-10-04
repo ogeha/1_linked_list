@@ -1,6 +1,15 @@
 package пакетик;
 
+import java.util.Observable;
+import java.util.Observer;
 public class Main {
+
+    Editor editor = new Editor();
+    EmailAlertListener alertListener = new EmailAlertListener();
+    LoggingListener loggingListener = new LoggingListener();
+
+
+
     public static void main(String[] args){
         MyList<Integer> list1 = new MyList<>();
         MyNode<Integer> el1 = new MyNode<Integer>(3);
